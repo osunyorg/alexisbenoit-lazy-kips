@@ -2,6 +2,11 @@
 
 baseURL: https://www.lazykips.com
 
+## OSUNY
+osuny:
+  website:
+    id: b8df1b28-ecd9-45e0-b26c-328bf0a6058c
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
