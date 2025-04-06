@@ -34,3 +34,10 @@ footer#document-footer
     .block-content
       audio
         max-width: columns(6)
+
+.block-gallery
+  figcaption
+    display: none
+  @include in-page-without-sidebar
+    .gallery > *
+      flex: 0 0 columns(4)
