@@ -43,22 +43,24 @@ footer#document-footer
       flex: 0 0 columns(4)
 
 .block-call_to_action
-  .block-content
-    padding-top: var(--grid-gutter) !important
-    padding-bottom: var(--grid-gutter) !important
-    border-left: offset(1) solid #000
-    border-right: offset(1) solid #000
   .call_to_action
-    > div
-      display: flex
-      flex-direction: column
-      justify-content: space-between
     .top
       .block-title
         @include h4
     .description
       p
         @include h3
+  @include media-breakpoint-up(desktop)
+    .block-content
+      padding-top: var(--grid-gutter) !important
+      padding-bottom: var(--grid-gutter) !important
+      border-left: offset(1) solid #000
+      border-right: offset(1) solid #000
+    .call_to_action
+      > div
+        display: flex
+        flex-direction: column
+        justify-content: space-between
     figure
       margin: var(--grid-gutter-negative)
       grid-column: 8/13 !important
