@@ -51,7 +51,9 @@ footer#document-footer
       p
         @include h3
   @include media-breakpoint-up(desktop)
+    background-color: transparent !important
     .block-content
+      background: var(--cta-background-color)
       padding-top: var(--grid-gutter) !important
       padding-bottom: var(--grid-gutter) !important
       border-left: offset(1) solid #000
