@@ -6,24 +6,26 @@ breadcrumb_title: >-
 
 
 
-url: "/actualites/"
+url: "/"
 slug: "actualites"
+aliases:
+  - /../actualites/
 date: 2025-01-29T15:43:49+01:00
-lastmod: 2025-01-30T10:05:16+01:00
+lastmod: 2026-04-11T11:20:23+02:00
 meta:
   hugo:
-    permalink: "/actualites/"
+    permalink: "/"
     path: "/posts"
     file: "content/fr/posts/_index.html"
     slug: "actualites"
   dates:
     created_at: 2025-01-29T15:43:49+01:00
-    updated_at: 2025-01-30T10:05:16+01:00
+    updated_at: 2026-04-11T11:20:23+02:00
     published_at: 2025-01-29T15:43:49+01:00
 search:
   id: "18259d02-b542-4cb0-9560-20332f6cab93"
   about_id: "b380daa2-f9ba-4039-9b40-f82d07f70de3"
-  url: "/actualites/"
+  url: "/"
   kind: "Communication::Website::Page::Localization"
   lang: "fr"
   title: >-
@@ -35,8 +37,6 @@ breadcrumbs:
   - title: >-
       Lazy Kips
     path: "/"
-  - title: >-
-      News
 
 design:
   full_width: true
@@ -45,6 +45,10 @@ design:
     offcanvas: true
 
 
+build:
+  list: always
+  publishResources: true
+  render: never
 
 position: 1
 weight: 1
