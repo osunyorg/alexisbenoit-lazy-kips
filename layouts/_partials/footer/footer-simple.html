@@ -1,0 +1,13 @@
+<div class="container">
+  {{ with site.Params.contact_details }}
+    <ul class="footer-social site-links">
+      {{ partial "commons/socials.html" (dict
+        "use_default_email_label" true
+        "context" .
+      ) }}
+    </ul>
+  {{ end }}
+  <div class="footer-logo">
+    {{ partial "footer/logo.html" }}
+  </div>
+</div>
