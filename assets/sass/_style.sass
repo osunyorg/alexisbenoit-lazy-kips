@@ -38,9 +38,9 @@ footer#document-footer
 .block-gallery.block-class-3-cols
   figcaption
     display: none
-  @include in-page-without-sidebar
+  @include media-breakpoint-between(md, xxxl)
     .gallery > *
-      flex: 0 0 columns(4)
+      flex: 0 0 columns(4) !important
 
 .block-call_to_action
   .call_to_action
@@ -66,3 +66,7 @@ footer#document-footer
     figure
       margin: var(--grid-gutter-negative)
       grid-column: 8/13 !important
+
+figure
+  img
+    border-radius: space(4)
