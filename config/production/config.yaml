@@ -7,6 +7,10 @@ osuny:
   website:
     id: b8df1b28-ecd9-45e0-b26c-328bf0a6058c
 
+## PARAMS
+params:
+  _merge: deep
+  plausible: "lazykips.com"
 
 ## LANGUAGE
 defaultContentLanguage: fr
