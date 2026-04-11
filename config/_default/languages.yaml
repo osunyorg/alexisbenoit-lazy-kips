@@ -12,9 +12,15 @@ fr:
       emails:
         email:
           label: >-
-            bnt.alexis@gmail.com
+            lazykipsmusic@gmail.com
           value: >-
-            mailto:bnt.alexis@gmail.com
+            mailto:lazykipsmusic@gmail.com
+      social_networks:
+        instagram:
+          label: >-
+            lazy.kips
+          value: >-
+            https://instagram.com/lazy.kips
 
   taxonomies:
     administrator: administrators
