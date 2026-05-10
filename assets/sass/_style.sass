@@ -70,3 +70,35 @@ footer#document-footer
 figure
   img
     border-radius: space(4)
+
+
+body.page-linktree
+  @include media-breakpoint-down(md)
+    text-align: center
+  .hero
+    min-height: 0
+    .content
+      padding-top: pxToRem(50)
+    h1
+      font-size: pxToRem(50)
+  main
+    min-height: calc(100vh - 172px)
+  .block-links
+    &--grid
+      ul
+        @include grid(4, md)
+
+.block-links
+  .links
+    li
+      a
+        &::after
+          font-weight: bold
+          font-size: 1em
+          line-height: 1
+          transform: translate(-3px, 3px) rotate(-45deg)
+          display: inline-block
+        &:hover
+          &::after
+            transform: translate(5px, -5px) rotate(-45deg)
+          

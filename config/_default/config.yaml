@@ -4,6 +4,8 @@ params:
   summary:
     position: hero
   search:
-    active: true
+    active: false
   logo:
     header: "/assets/images/logo.svg"
+  breadcrumb:
+    position: none
