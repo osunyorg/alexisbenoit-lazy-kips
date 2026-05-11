@@ -73,20 +73,25 @@ figure
 
 
 body.page-linktree
-  @include media-breakpoint-down(md)
-    text-align: center
   .hero
     min-height: 0
     .content
       padding-top: pxToRem(50)
     h1
       font-size: pxToRem(50)
-  main
-    min-height: calc(100vh - 172px)
-  .block-links
-    &--grid
-      ul
-        @include grid(4, md)
+  @include media-breakpoint-down(md)
+    text-align: center
+    .block-links
+      &--grid
+        ul
+          row-gap: $spacing-3
+  @include media-breakpoint-up(md)
+    main
+      min-height: calc(100vh - 172px)
+    .block-links
+      &--grid
+        ul
+          @include grid(4)
 
 .block-links
   .links
