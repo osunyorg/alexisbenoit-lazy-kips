@@ -35,12 +35,17 @@ footer#document-footer
       audio
         max-width: columns(6)
 
-.block-gallery.block-class-3-cols
-  figcaption
-    display: none
-  @include media-breakpoint-between(md, xxxl)
-    .gallery > *
-      flex: 0 0 columns(4) !important
+.block-gallery
+  .gallery
+    picture, img
+      aspect-ratio: 1
+      object-fit: cover
+  &.block-class-3-cols
+    figcaption
+      display: none
+    @include media-breakpoint-between(md, xxxl)
+      .gallery > *
+        flex: 0 0 columns(4) !important
 
 .block-call_to_action
   .call_to_action
