@@ -100,8 +100,13 @@ body.page-linktree
 
 .block-links
   .links
+    display: flex
+    gap: $spacing-4
     li
       a
+        display: inline
+        width: auto !important
+        @include h4
         &::after
           font-weight: bold
           font-size: 1em
@@ -111,4 +116,4 @@ body.page-linktree
         &:hover
           &::after
             transform: translate(5px, -5px) rotate(-45deg)
-          
+
